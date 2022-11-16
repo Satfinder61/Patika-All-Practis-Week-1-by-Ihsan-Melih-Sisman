@@ -4,7 +4,18 @@ import java.util.Scanner;
 public class AreaPerimeterOfCircle {
     public static void main(String[] args) {
 
+
+
+        /*
+        Write a program in Java that calculates the area and perimeter of a circle whose radius you get from the user.
+
+        Area Formula: π * r * r;
+
+        Perimeter Formula: 2 * π * r;
+        */
+
         Scanner scanner = new Scanner(System.in);
+
 
         // Makes a new decimal form
         DecimalFormat df = new DecimalFormat("#.00");
@@ -15,7 +26,7 @@ public class AreaPerimeterOfCircle {
 
         // Calculates the area of circle
         double areaOfCircle = Math.PI * radius * radius;
-       // Calculates the perimeter of circle
+        // Calculates the perimeter of circle
         double perimeterOfCircle = 2 * Math.PI * radius;
 
         System.out.println("Dairenin Alanı: " + df.format(areaOfCircle));
@@ -26,7 +37,7 @@ public class AreaPerimeterOfCircle {
         double measureOfCentralAngle = scanner.nextDouble();
 
         // Calculates the area of circle slice
-        double centralAngle = (Math.PI * (radius * radius) * measureOfCentralAngle)/ 360;
+        double centralAngle = (Math.PI * (radius * radius) * measureOfCentralAngle) / 360;
         System.out.println("Verilen açıda daire diliminin alanı " + df.format(centralAngle));
 
     }
